@@ -1,0 +1,15 @@
+.signup-container{
+    .signup-form{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        padding: 2em;
+        background-color: lightpink;
+        -webkit-margin-before: 5em;
+        margin-block-start: 5em;
+        width: 20em;
+        direction: rtl;
+    }
+    .form-input{
+
+        min-height: 2em;
+    }
+}
