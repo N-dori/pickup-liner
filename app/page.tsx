@@ -40,8 +40,7 @@ const getImages = async () => {
     const imagesData = await getImages()
     
     const [pickupLine, imgs] = await Promise.all([picupLinesData, imagesData])
-    console.log('imgs : ' ,imgs.length);
-    // const  {pickupLine} = res
+
    function getRandomInt(max: number) {
      return Math.floor(Math.random() * max);
    }
@@ -51,9 +50,8 @@ const getImages = async () => {
       <section className='hero-container flex-ac flex-col '>
         <section className='pickup-line-container flex-ac flex-col'>
        
-          <Link href={'/add-line'}>Add</Link>
         {pickupLine?<PickupLinesDisplayer  pickupLines={pickupLine} imgs={imgs}/>:''}  
-        {/* { <p>{pickuplines[0]?.line}</p> } */}
+          <Link href={'/add-line'}>יש לך משפט פתיחה מנצח ? לחץ כאן להוספה</Link>
         </section>
       </section>
     </main>

@@ -41,6 +41,9 @@
 .clean{
     list-style-type: none;
 }
+.cp{
+    cursor: pointer;
+}
 .no-under-line{
     text-decoration: none;
     &:focus, &:hover, &:visited, &:link, &:active {
@@ -60,6 +63,10 @@ transition: opacity .8s ease;
 .no-scroll{
     overflow-y: hidden;
 }
+.tac{
+    text-align: center;
+}
+
 textarea:focus, input:focus{
     outline: none;
 }

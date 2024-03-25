@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Fredoka } from 'next/font/google'
 import './assets/scss/main.scss'
 import NavBar from './cmps/NavBar'
+import { AuthProvider } from './Providers'
 
 const fredoka = Fredoka({ 
                          subsets: ['latin'],
@@ -20,9 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en"  className={`${fredoka.variable}`}>
+
       <body className='main-layout'>
+        <AuthProvider>
         <NavBar/>
         {children}
+        </AuthProvider>
      
       </body>
     </html>

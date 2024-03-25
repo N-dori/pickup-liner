@@ -1,9 +1,19 @@
 import mongoose, { Schema } from "mongoose";
 
 const userSceama = new Schema ({
-    name : String ,
-    lastName : String ,
-    adress : String ,
+    name : {
+        type: String,
+        required:[true , " please write your full name"]
+    } ,
+    email :  {
+        type: String,
+        required:[true , " please provide valid email"],
+        unique:true,
+    }  ,
+    password: {
+        type: String,
+        required:[false , " please provide password"]
+    } ,
     isAdmin : Boolean ,
 
 
