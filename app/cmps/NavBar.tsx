@@ -15,8 +15,8 @@ export default function NavBar({}: Props) {
 
 
   return (
-    <nav className='nav-bar flex-sb full'>
-          <Link href={'/'} className='logo'> THEchild</Link>
+    <nav className='nav-bar flex-sb  full'>
+          <Link href={'/'} className='logo'>Kinder</Link>
            <Image
             className='hero'
             src={'/theChild.jpg'}

@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en"  className={`${fredoka.variable}`}>
 
-      <body className='main-layout'>
+      <body className='main-layout '>
         <AuthProvider>
         <NavBar/>
         {children}
